@@ -9,7 +9,7 @@ import {
   YAxis,
 } from 'recharts';
 import styled from 'styled-components';
-import { UseDarkMode } from '../../context/UseDarkMode';
+import { useDarkMode } from '../../context/useDarkMode';
 import Heading from '../../ui/Heading';
 import DashboardBox from './DashboardBox';
 
@@ -24,7 +24,7 @@ const StyledSalesChart = styled(DashboardBox)`
 `;
 
 const SalesChart = ({ bookings, numDays }) => {
-  const { isDarkMode } = UseDarkMode();
+  const { isDarkMode } = useDarkMode();
 
   const allDates = eachDayOfInterval({
     start: subDays(new Date(), numDays - 1),

@@ -7,7 +7,7 @@ import {
   Tooltip,
 } from 'recharts';
 import styled from 'styled-components';
-import { UseDarkMode } from '../../context/UseDarkMode';
+import { useDarkMode } from '../../context/useDarkMode';
 import Heading from '../../ui/Heading';
 
 const ChartBox = styled.div`
@@ -142,7 +142,7 @@ function prepareData(startData, stays) {
 }
 
 const DurationChart = ({ confirmedStays }) => {
-  const { isDarkMode } = UseDarkMode();
+  const { isDarkMode } = useDarkMode();
   const startData = isDarkMode ? startDataDark : startDataLight;
   const data = prepareData(startData, confirmedStays);
 

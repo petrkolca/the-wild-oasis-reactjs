@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { UseDarkMode } from '../context/UseDarkMode';
+import { useDarkMode } from '../context/useDarkMode';
 
 const StyledLogo = styled.div`
   text-align: center;
@@ -11,7 +11,7 @@ const Img = styled.img`
 `;
 
 function Logo() {
-  const { isDarkMode } = UseDarkMode();
+  const { isDarkMode } = useDarkMode();
 
   const imgSrc = !isDarkMode ? '/logo-light.png' : '/logo-dark.png';
 
