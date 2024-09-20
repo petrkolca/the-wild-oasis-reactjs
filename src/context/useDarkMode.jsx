@@ -1,11 +1,11 @@
-// src/context/useDarkMode.js
+// src/context/UseDarkMode.js
 import { useContext } from 'react';
 import { DarkModeContext } from './DarkModeContext';
 
-export function useDarkMode() {
+export function UseDarkMode() {
   const context = useContext(DarkModeContext);
   if (context === undefined) {
-    throw new Error('useDarkMode must be used within a DarkModeProvider');
+    throw new Error('UseDarkMode must be used within a DarkModeProvider');
   }
   return context;
 }
