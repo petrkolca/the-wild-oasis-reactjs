@@ -1,4 +1,4 @@
-# The Wild Oasis - Hotel Management System
+# The Wild Oasis - Hotel Management System app
 
 ## Overview
 
